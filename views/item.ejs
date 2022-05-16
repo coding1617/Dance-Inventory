@@ -23,28 +23,16 @@
             <h1 class="pink-text accent-3">Costume details:</h1>
             <table>
                 <tr>
-                    <th class="blue-text darken-2">Item:</th>
-                    <td>Tap Costume</td>
+                    <th>Item:</th>
+                    <td><%= item %></td>
                 </tr>
                 <tr>
-                    <th class="blue-text darken-2">Quantity:</th>
-                    <td>5</td>
-
+                    <th>Quantity:</th>
+                    <td><%= quantity %></td>
                 </tr>
                 <tr>
-                    <th class="blue-text darken-2">Description:</th>
-                    <td>
-                        Color: Black and Red
-                        <br> Type: One-piece with skirt</br>
-                        Other info: Lots of rhinestones,
-                        With tights, shoes
-                    </td>
-                </tr>
-                <tr>
-                    <th class="blue-text darken-2">Photo:</th>
-                    <td>
-                        <img class="responsive-img" width="100" height="200" src="/images/image2.jpg">
-                    </td>
+                    <th>Description:</th>
+                    <td><%= description %></td>
                 </tr>
             </table>
         </div>
@@ -81,12 +69,14 @@
                             <input type="text" name="description" data-length="100">
                         </div>
                     </div>
+                    <!--
                     <div class="row">
                         <div class="input-field col s12">
                             <label for="photo">Photo:</label>
                             <input type="text" name="photo" data-length="100">
                         </div>
                     </div>
+                    -->
                     <div class="modal-footer">
                         <button class="btn waves-effect waves-light " type="submit"><i
                                 class="material-icons right">send</i>Submit</button>
