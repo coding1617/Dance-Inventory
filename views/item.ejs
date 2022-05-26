@@ -41,7 +41,7 @@
             <a class="btn-large waves-effect waves-light orange left modal-trigger" href="#stuffEdit">
                 <i class="material-icons right">edit</i>Edit
             </a>
-            <a class="btn-large waves-effect waves-light red right">
+            <a class="btn-large waves-effect waves-light red right"  href="/stuff/item/<%= id %>/delete">
                 <i class="material-icons right">delete</i>Delete
             </a>
         </div>
@@ -52,21 +52,21 @@
             <div class="modal-content">
 
                 <h2>Edit item:</h2>
-                <form>
+                <form method="post" action="/stuff/item/<%= id%>"> <!-- default action is the page's URL --> 
                     <div class="row">
                         <div class="input-field col s6">
                             <label for="name">Item Name:</label>
-                            <input type="text" name="name" class="validate" data-length="32" required>
+                            <input value="<%= item%>" type="text" name="name" class="validate" data-length="32" required>
                         </div>
                         <div class="input-field col s6">
                             <label for="quantity">Item Quantity:</label>
-                            <input type="number" name="quantity" value=1 required>
+                            <input type="number" name="quantity" value=<%= quantity%> value=1 required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <label for="description">Item Description:</label>
-                            <input type="text" name="description" data-length="100">
+                            <input type="text" name="description" value="<%= description%>" data-length="100">
                         </div>
                     </div>
                     <!--

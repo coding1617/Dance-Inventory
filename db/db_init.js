@@ -28,8 +28,7 @@ const insert_stuff_table_sql = `
     VALUES 
         (?, ?, ?);
 `
-
-db.execute(insert_stuff_table_sql, ['Tap Costume', '5', 'Color: Black and Red; Type: One-piece with skirt; Other info: Lots of rhinestones, With tights, shoes']);
+db.execute(insert_stuff_table_sql, ['Tap Costume', '5', 'Color: Red and Black; Type: One-piece; Other info: Lots of rhinestones, With tights, shoes']);
 
 db.execute(insert_stuff_table_sql, ['Ballet Costume', '7', 'Color: Blue and Gold; Type: Large tutu; Other info: Lots of rhinestones, With tights, shoes']);
 
